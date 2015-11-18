@@ -1,0 +1,22 @@
+#Created by Andrew Bailey
+#Guess the Number Game
+import random
+
+ran = random.randint(1,10)
+print('Guess a number between 1 and 10: ')
+guess = int(input())
+
+while guess != ran:
+    if guess > ran:
+        print('Sorry, too high.')
+    if guess < ran:
+        print('Sorry, too low.')
+    rtry = input('Try again? y/n ')
+    if rtry == 'y':
+        print('Guess a number between 1 and 10: ')
+        guess = int(input())
+    else:
+        print('Thanks for playing!')
+else:
+    print('Congratulations, you won!')
+    
