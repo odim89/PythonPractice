@@ -1,0 +1,10 @@
+# Created by Andrew Bailey
+import random
+
+roll = input('Would you like to roll the D20? y/n? ')
+
+while roll =='y':
+    print(random.randint(1,20))
+    roll = input('Would you like to roll again? y/n? ')
+else:
+    print('Goodbye!')
